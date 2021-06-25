@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>GaTT - Materiais para Tênis de Mesa</title>
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="formulario.js">
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro - GaTT </h1>
+        <br><br>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="endereco"><strong>Endereço</strong></label>
+            <input type="endereco" name="endereco" id="endereco" required>
+        </div>
+
+        <div class="campo">
+            <label for="telefone"><strong>Telefone para contato</strong></label>
+            <input type="telefone" name="telefone" id="telefone" required>
+        </div>
+
+            <div class="campo">
+            <label>Qual modelo de raquete você deseja comprar?</label>
+            <label for="modelo"></label>
+            <select id="modelo" required>
+                <option selected disabled value="">Selecione:</option>
+                <option>Clássico</option>
+                <option>Caneta</option>
+                <option>Classineta</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Escolha a marca:</strong></label><br><br>
+                <!--Aqui eu coloquei umas imagens para ficar mais bonito.-->
+                <img src="butterfly.png" alt="">
+                <input type="checkbox" id="marca1" name="marca1" value="Butterfly">
+                <label for="marca1"></label>
+                <img src="yasaka.png" alt="">
+                <input type="checkbox" id="marca2" name="marca2" value="Yasaka">
+                <label for="marca2"></label>
+                <img src="xiom.png" alt="">
+                <input type="checkbox" id="marca3" name="marca3" value="Xiom">
+                <label for="marca3"></label>  
+            </div>
+            </fieldset>
+            <br>
+            <br> 
+
+                <button type="submit">Concluir</button>
+             
+    </form>
+</body>
+</html>
